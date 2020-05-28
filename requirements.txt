@@ -1,0 +1,3 @@
+#OpenCV Lib
+opencv-python
+opencv-contrib-python
