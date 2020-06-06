@@ -9,8 +9,12 @@ while(True):
     ret, frame = cap.read()
 
     cv2.imshow('frame', frame)
-    if cv2.waitKey(1) & 0xFF == ord('q'):
+    
+    k = cv2.waitKey(1)
+    if k == ord('q'):
         break
+    if k == ord('s'):
+        cv2.imwrite('/save/img.png', frame) 
 
 cap.release()
 cv2.destroyAllWindows()

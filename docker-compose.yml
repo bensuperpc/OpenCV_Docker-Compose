@@ -10,6 +10,7 @@ services:
       - /dev/video0:/dev/video0
     volumes:
       - /tmp/.X11-unix:/tmp/.X11-unix
+      - ./save:/save
     env_file:
       - ./var.env
     environment:
