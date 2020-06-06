@@ -15,4 +15,4 @@ services:
       - ./var.env
     environment:
       - DISPLAY=unix:0
-      - CAMERA=/dev/video0
+      - VIDEO=/dev/video0
